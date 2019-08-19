@@ -30,7 +30,7 @@ export default {
       this.todo="";
     },
     deleteList(index){
-      this.list.split(index,1)
+      this.list.splice(index,1)
       console.log(this.list);
     }
   },
