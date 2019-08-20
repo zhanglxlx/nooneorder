@@ -1,15 +1,23 @@
 <template>
   <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png">
+    <h1>父子组件的传参</h1>
+    
+    <parent></parent>
+
+    <hr>
+
    <HelloWorld msg="练习todo"/> 
    <hr>
    <!-- 3.模板中使用 -->
    <Home></Home>
    <hr>
+   <New></New>
+   <hr>
    <todoList></todoList>  
    <hr>
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!--<h2>你好 vue</h2> -->
-    <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <ul type="none">
         <li v-for="(itme,index) in list" :class="{'red':index==0}">
@@ -37,6 +45,9 @@ import HelloWorld from './components/HelloWorld.vue'
 import todoList from './components/todolist.vue'
 // 1. 引入组件
 import Home from './components/Home.vue'
+import New from './components/News.vue'
+
+import parent from './components/Parent.vue'
 
 export default {
   name: 'app',
@@ -70,7 +81,9 @@ export default {
   components: {
     HelloWorld,
     todoList,
-    Home  //2.挂载
+    Home,  //2.挂载，
+    New,
+    parent
   }
 }
 </script>
