@@ -16,7 +16,7 @@ export default {
     },
     methods: {
         run(){
-            aleret("我是父组件的run方法")
+            alert("我是父组件的run方法")
         }
     },
     components:{
