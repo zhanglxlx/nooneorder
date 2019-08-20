@@ -71,18 +71,6 @@ export default {
 </script>
 
 <style>
-<<<<<<< HEAD
-=======
-  .red{
-    color:red;
-  }
-  .box{
-    height: 100px;
-    width:100px;
-    background: red;
-    margin: 0 auto;
-  }
->>>>>>> aefd2875052a6e42945760e0ba3970c9e7095f29
 /* #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
