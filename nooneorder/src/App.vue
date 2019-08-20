@@ -1,11 +1,14 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
    <HelloWorld msg="练习todo"/> 
+   <hr>
+   <!-- 3.模板中使用 -->
+   <Home></Home>
+   <hr>
    <todoList></todoList>  
+   <hr>
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!--<h2>你好 vue</h2> -->
-=======
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <ul type="none">
@@ -26,13 +29,14 @@
     <div ref="box" >获取的之</div>
     <button @click="setMsg()">设置表单中的数据set：</button>
     <div class="box" :style="{'width':boxWidth+'px'}"></div>
->>>>>>> aefd2875052a6e42945760e0ba3970c9e7095f29
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import todoList from './components/todolist.vue'
+// 1. 引入组件
+import Home from './components/Home.vue'
 
 export default {
   name: 'app',
@@ -65,7 +69,8 @@ export default {
   },
   components: {
     HelloWorld,
-    todoList
+    todoList,
+    Home  //2.挂载
   }
 }
 </script>
