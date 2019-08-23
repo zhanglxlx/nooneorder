@@ -4,6 +4,7 @@
             <router-link to="/home">跳转到home</router-link>
 
             <router-link to="/new">跳转到news</router-link>
+            <router-link to="/login">登录</router-link>
       </header>
       <router-view></router-view>
       <!-- 跳转 -->

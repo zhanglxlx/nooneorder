@@ -3,6 +3,7 @@ const router=express.Router();
 const pool=require("../pool");
 
 router.post("/signin",(req,res)=>{
+  console.log(req.body);
   var uname=req.body.uname;
   var upwd=req.body.upwd;
   console.log(uname,upwd)

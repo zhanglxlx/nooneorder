@@ -20,22 +20,31 @@ export default {
     },
     methods: {
         login(){
-           this.$axios({
+            if(this.uname || this.upwd){
+            let postData = this.$qs.stringify({
+                    uname:this.uname,
+                upwd:this.upwd
+                });
+            this.$axios({
                 method:"post",
-                url:"http://127.0.0.1:3000/users/signin",
-                data:{"uname":this.uname,"upwd":this.upw}
-           }).then((result)=>{
-               console.log(result.data);
-               if(result.data==1){
-                alert("登录成功");
-                this.$router.push('/home')
-               }else{
-                   alert(result.data.msg);
-               }
-                // console.log(result.data);
-           }).catch((err)=>{
+                    url:"http://127.0.0.1:3000/users/signin",
+                    data:postData
+            }).then((result)=>{
+                //    console.log(result.data);
+                if(result.data.ok==1){
+                    alert("登录成功");
+                    //    this.$router.push({path:'/home'});
+                    this.$router.push('/home')
+                }else{
+                    alert(result.data.msg);
+                }
+                    // console.log(result.data);
+            }).catch((err)=>{
                 console.log(err)
-           })
+            })
+          }else{
+              alert("用户名和密码不能为空")
+          }
         }
     },
 }
