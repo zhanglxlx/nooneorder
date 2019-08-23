@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 //托管静态资源到public目录下
 app.use(express.static('public'));
 app.use(cors({
-  origin:"http://127.0.0.1:19187"
+  origin:"*"
 }))
 app.use(session({
   secret:"128位随机字符",

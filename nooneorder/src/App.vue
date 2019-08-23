@@ -1,10 +1,13 @@
 <template>
   <div id="app">
+      <header class="header">
+            <router-link to="/home">跳转到home</router-link>
+
+            <router-link to="/new">跳转到news</router-link>
+      </header>
       <router-view></router-view>
       <!-- 跳转 -->
-      <router-link to="/home">跳转到home</router-link>
-      <br>
-      <router-link to="/new">跳转到news</router-link>
+      
       <img alt="Vue logo" src="./assets/logo.png">
     <h1>父子组件的传参</h1>
     
@@ -46,6 +49,8 @@
 </template>
 
 <script>
+    
+    
     import HelloWorld from './components/HelloWorld.vue'
     import todoList from './components/todolist.vue'
     // 1. 引入组件
@@ -100,13 +105,17 @@
     }
 </script>
 
-<style>
-    /* #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
+<style lang="scss">
+   .header{
+       height: 4.4rem;
+       line-height: 4.4rem;
+       text-align: center;
+       background-color: black;
+       color: aliceblue;
+   }
+   .header a{
+       color: aliceblue;
+       text-decoration: none;
+       padding: 0.2em;
+   }
 </style>

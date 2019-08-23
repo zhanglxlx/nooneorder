@@ -3,6 +3,9 @@ import App from './App.vue'
 // 使用vue-resource 请求数据
 import VueResource from 'vue-resource'
 import VueRouter from 'vue-router'
+import axios from 'axios'
+
+Vue.prototype.$axios = axios;
 Vue.config.productionTip = false
     // 使用axios请求数据
 
@@ -14,13 +17,17 @@ import Home from './components/Home.vue'
 import New from './components/News.vue'
 import Content from './components/Content.vue'
 import ProdectContent from './components/ProdectContent.vue'
+import Login from './components/Login.vue'
+// 引入公共的css 注意：创建此昂木的时候必须用scss
 
+import './assets/css/basic.scss'
 // 2.配置路由
 const routes = [
         { path: '/home', component: Home },
         { path: '/new', component: New },
         { path: '/content/:id', component: Content },
         { path: '/ProdectContent', component: ProdectContent },
+        { path: '/login', component: Login },
 
         // { path: '*', component: Notfont },
     ]
