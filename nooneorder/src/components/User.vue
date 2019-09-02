@@ -1,6 +1,7 @@
 <template>
     <div id="user">
         <div class="user">
+<<<<<<< HEAD
             <div class="left">
                     <router-link to="/userAdd">增加用户</router-link>
                     <br>
@@ -39,4 +40,7 @@ export default {
         width:200px;
 
     }
+
+<style>
+
 </style>

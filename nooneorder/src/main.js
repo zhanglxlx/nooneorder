@@ -6,6 +6,8 @@ import VueRouter from 'vue-router'
 import axios from 'axios'
 
 Vue.prototype.$axios = axios;
+import qs from 'qs';
+Vue.prototype.$qs = qs;
 Vue.config.productionTip = false
     // 使用axios请求数据
 
@@ -17,10 +19,15 @@ import Home from './components/Home.vue'
 import New from './components/News.vue'
 import Content from './components/Content.vue'
 import ProdectContent from './components/ProdectContent.vue'
+<<<<<<< HEAD
 import Login from './components/Login.vue'
 import User from './components/User.vue'
 import userAdd from './components/user/userAdd.vue'
 import userList from './components/user/userList.vue'
+=======
+import Login from './components/Login.vue' 
+import User from './components/User.vue' 
+>>>>>>> b4939073563996c6019a686b3ff14dea29c73172
 // 引入公共的css 注意：创建此昂木的时候必须用scss
 
 import './assets/css/basic.scss'
@@ -31,12 +38,16 @@ const routes = [
         { path: '/content/:id', component: Content },
         { path: '/ProdectContent', component: ProdectContent },
         { path: '/login', component: Login },
+<<<<<<< HEAD
         { path: '/User', component: User,
           children:[
               {path: '/userAdd', component: userAdd},
               {path: '/userList', component: userList}
             ]
        },
+=======
+        { path: '/user', component: User },
+>>>>>>> b4939073563996c6019a686b3ff14dea29c73172
 
         // { path: '*', component: Notfont },
     ]

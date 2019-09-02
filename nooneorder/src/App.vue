@@ -4,8 +4,12 @@
             <router-link to="/home">跳转到home</router-link>
             &nbsp; &nbsp;
             <router-link to="/new">跳转到news</router-link>
+<<<<<<< HEAD
             &nbsp; &nbsp;
             <router-link to="/User">跳转到user</router-link>
+=======
+            <router-link to="/login">登录</router-link>
+>>>>>>> b4939073563996c6019a686b3ff14dea29c73172
       </header>
       <router-view></router-view>
       <!-- 跳转 -->
