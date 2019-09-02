@@ -25,21 +25,11 @@ import Home from './components/Home.vue'
 import New from './components/News.vue'
 import Content from './components/Content.vue'
 import ProdectContent from './components/ProdectContent.vue'
-<<<<<<< HEAD
-import Login from './components/Login.vue'
-import User from './components/User.vue'
-import userAdd from './components/user/userAdd.vue'
-import userList from './components/user/userList.vue'
-=======
 import Login from './components/Login.vue' 
 import User from './components/User.vue' 
-<<<<<<< HEAD
 import userAdd from './components/user/userAdd.vue' 
 import userList from './components/user/userList.vue' 
 import city from './components/city.vue' 
-=======
->>>>>>> b4939073563996c6019a686b3ff14dea29c73172
->>>>>>> ca387e8c8bc8a767b364ad23dedb1fb8e8725625
 // 引入公共的css 注意：创建此昂木的时候必须用scss
 
 import './assets/css/basic.scss'
@@ -51,25 +41,12 @@ const routes = [
         { path: '/content/:id', component: Content },
         { path: '/ProdectContent', component: ProdectContent },
         { path: '/login', component: Login },
-<<<<<<< HEAD
         { path: '/User', component: User ,
             children:[
                 {path:"userAdd",component:userAdd},
                 {path:"userList",component:userList},
             ]
         },
-=======
-<<<<<<< HEAD
-        { path: '/User', component: User,
-          children:[
-              {path: '/userAdd', component: userAdd},
-              {path: '/userList', component: userList}
-            ]
-       },
-=======
-        { path: '/user', component: User },
->>>>>>> b4939073563996c6019a686b3ff14dea29c73172
->>>>>>> ca387e8c8bc8a767b364ad23dedb1fb8e8725625
 
         // { path: '*', component: Notfont },
     ]
