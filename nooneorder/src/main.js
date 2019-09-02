@@ -25,5 +25,5 @@ import './assets/css/basic.scss'
 new Vue({
         router,
         render: h => h(App)
-    }).$mount('#app')
+ }).$mount('#app')
     // 5.在根组件中配置显示  <router-view></router-view>
