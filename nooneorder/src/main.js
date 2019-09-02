@@ -15,8 +15,6 @@ Vue.config.productionTip = false
 Vue.use(VueResource)
     // 1.创建组件
 
-
-
 // 引入公共的css 注意：创建此昂木的时候必须用scss
 
 import './assets/css/basic.scss'
