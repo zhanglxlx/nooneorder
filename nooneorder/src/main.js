@@ -2,11 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 // 使用vue-resource 请求数据
 import VueResource from 'vue-resource'
+
 import VueRouter from 'vue-router'
 import axios from 'axios'
 // 引入mint -ui
 import Mint from 'mint-ui';
-Vue.user(Mint)
+Vue.use(Mint)
 import 'mint-ui/lib/style.css'                                                  
 
 
@@ -28,12 +29,14 @@ import Login from './components/Login.vue'
 import User from './components/User.vue' 
 import userAdd from './components/user/userAdd.vue' 
 import userList from './components/user/userList.vue' 
+import city from './components/city.vue' 
 // 引入公共的css 注意：创建此昂木的时候必须用scss
 
 import './assets/css/basic.scss'
 // 2.配置路由
 const routes = [
         { path: '/home', component: Home },
+        { path: '/city', component: city },
         { path: '/new', component: New },
         { path: '/content/:id', component: Content },
         { path: '/ProdectContent', component: ProdectContent },
