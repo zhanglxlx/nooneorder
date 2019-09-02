@@ -5,12 +5,9 @@ const cors=require("cors");
 const session=require("express-session");
 /*引入路由模块*/
 const index=require("./routes/index");
-const details=
-  require("./routes/details");
-const users=
-  require("./routes/users");
-const products=
-  require("./routes/products");
+const details=require("./routes/details");
+const users=require("./routes/users");
+const products=require("./routes/products");
 
 var app = express();
 var server = app.listen(3000);
