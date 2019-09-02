@@ -20,7 +20,7 @@
         <label class="mint-button-text">点击上拉 action sheet</label>
       </button>
     </div>
-    <mt-button :actions="data" size="large" v-model="sheetVisible"></mt-button>
+    <mt-actionsheet :actions="data" v-model="sheetVisible"></mt-actionsheet>
   </div>
 </template>
 <script>
@@ -43,7 +43,6 @@ export default {
   },
   methods: {
     flage() {
-      console.log(1);
       this.sheetVisible = true;
     },
     getCamera: function() {

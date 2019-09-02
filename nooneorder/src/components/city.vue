@@ -16,7 +16,6 @@
         <mt-cell title="Austin"></mt-cell>
       </mt-index-section>
 
-      
       <mt-index-section index="B">
         <mt-cell title="Baldwin"></mt-cell>
         <mt-cell title="Braden"></mt-cell>
