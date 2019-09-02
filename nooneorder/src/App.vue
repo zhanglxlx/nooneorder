@@ -5,6 +5,11 @@
             &nbsp; &nbsp;
             <router-link to="/new">跳转到news</router-link>
 <<<<<<< HEAD
+            &nbsp; &nbsp;
+            <router-link to="/User">跳转到user</router-link>
+            &nbsp;&nbsp;
+=======
+<<<<<<< HEAD
 
             <router-link to="/User/userAdd">跳转到user</router-link>
             
@@ -15,8 +20,8 @@
             <router-link to="/User">跳转到user</router-link>
 =======
 >>>>>>> ca387e8c8bc8a767b364ad23dedb1fb8e8725625
+>>>>>>> 1bd43801e5bdbcdc8da668fdb7ae8ea0acae4e67
             <router-link to="/login">登录</router-link>
->>>>>>> b4939073563996c6019a686b3ff14dea29c73172
       </header>
       <router-view></router-view>
       <!-- 跳转 -->
