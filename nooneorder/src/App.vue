@@ -8,6 +8,8 @@
             <router-link to="/User">跳转到user</router-link>
             &nbsp;&nbsp;
             <router-link to="/login">登录</router-link>
+            &nbsp;&nbsp;
+            <router-link to="/storeHome">vuex</router-link>
       </header>
       <router-view></router-view>
       <!-- 跳转 -->
@@ -58,6 +60,7 @@
     import HelloWorld from './components/HelloWorld.vue'
     import todoList from './components/todolist.vue'
     import User from './components/User.vue'
+    import storeHome from './components/storeHmoe.vue'
     // 1. 引入组件
 
     // import Home from './components/Home.vue'
@@ -106,7 +109,8 @@
             // Home,  //2.挂载，
             // New,
             parent,
-            User
+            User,
+            storeHome
             
         }
     }

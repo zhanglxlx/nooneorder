@@ -17,6 +17,7 @@ import Login from '../components/Login.vue'
 import User from '../components/User.vue'
 import userAdd from '../components/user/userAdd.vue'
 import userList from '../components/user/userList.vue'
+import storeHome from '../components/storeHmoe.vue'
 
 // 2.配置路由
 const routes = [
@@ -25,6 +26,7 @@ const routes = [
         { path: '/content/:id', component: Content },
         { path: '/ProdectContent', component: ProdectContent },
         { path: '/login', component: Login },
+        { path: '/storeHome', component: storeHome },
         { path: '/User', component: User,
           children:[
               {path: 'userAdd', component: userAdd},

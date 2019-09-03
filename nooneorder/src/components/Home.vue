@@ -2,6 +2,7 @@
     <!-- 所有的内容要被跟节点包含起来 -->
     <div>
         <h1>home组件</h1>
+        <p>{{this.$store.state.count}}</p>    
         <!-- 组件练习 -->
         <h1>数据请求</h1>
         <p>{{msg}}</p>
@@ -23,6 +24,7 @@
 </template>
 <script>
     import axios from 'axios'
+    import store from '../vuex/store.js'
 export default {
     data(){
         return{
@@ -30,6 +32,7 @@ export default {
             list:[]
         }
     },
+    store,
     methods: {
         run(){
             alert("运行了")
