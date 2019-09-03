@@ -25,13 +25,6 @@
             },
             requestData() {
                 this.loading = true;
-                // this.$axios.get("http://127.0.0.1:3000/index").then(function (res) {
-                //     console.log(res);
-                //     this.list = res.data;
-                //     this.loading=false;
-                // }).catch(function(err) {
-                //     throw err;
-                // })
                 this.$http.get("http://127.0.0.1:3000/index").then((response)=>{
                     this.list=response.data;
                     ++this.page;
