@@ -4,35 +4,18 @@
             <router-link to="/home">跳转到home</router-link>
             &nbsp; &nbsp;
             <router-link to="/new">跳转到news</router-link>
-<<<<<<< HEAD
             &nbsp; &nbsp;
             <router-link to="/User">跳转到user</router-link>
             &nbsp;&nbsp;
-=======
-<<<<<<< HEAD
 
             <router-link to="/User/userAdd">跳转到user</router-link>
-            
-
-=======
-<<<<<<< HEAD
-            &nbsp; &nbsp;
-            <router-link to="/User">跳转到user</router-link>
-=======
->>>>>>> ca387e8c8bc8a767b364ad23dedb1fb8e8725625
->>>>>>> 1bd43801e5bdbcdc8da668fdb7ae8ea0acae4e67
             <router-link to="/login">登录</router-link>
       </header>
       <router-view></router-view>
       <!-- 跳转 -->
       
-<<<<<<< HEAD
-      <!-- <img alt="Vue logo" src="./assets/logo.png">
-    <h1>父子组件的传参</h1>
-=======
       <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <h1>父子组件的传参</h1>
->>>>>>> ca387e8c8bc8a767b364ad23dedb1fb8e8725625
     
     <parent></parent>
 
@@ -46,13 +29,8 @@
    <New></New> -->
    <!-- <hr>
    <todoList></todoList>  
-<<<<<<< HEAD
-   <hr> -->
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-=======
    <hr>
     <img alt="Vue logo" src="./assets/logo.png"> -->
->>>>>>> ca387e8c8bc8a767b364ad23dedb1fb8e8725625
     <!--<h2>你好 vue</h2> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/>
     <ul type="none">
@@ -125,14 +103,10 @@
         components: {
             HelloWorld,
             todoList,
-<<<<<<< HEAD
-            parent
-=======
             // Home,  //2.挂载，
             // New,
             parent,
             User
->>>>>>> ca387e8c8bc8a767b364ad23dedb1fb8e8725625
         }
     }
 </script>

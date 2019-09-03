@@ -4,7 +4,8 @@ import App from './App.vue'
 import VueResource from 'vue-resource'
 import axios from 'axios'
 import router from './router/router.js'
-
+import Mint from 'mint-ui'
+Vue.use(Mint)
 Vue.prototype.$axios = axios;
 import qs from 'qs';
 Vue.prototype.$qs = qs;
@@ -14,7 +15,6 @@ Vue.config.productionTip = false
 // 使用
 Vue.use(VueResource)
     // 1.创建组件
-
 
 
 // 引入公共的css 注意：创建此昂木的时候必须用scss
